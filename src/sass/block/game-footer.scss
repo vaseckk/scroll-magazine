@@ -1,0 +1,125 @@
+.game-footer_section {
+    width: 100%;
+    display: block;
+    margin-top: calc($index * 1.5);
+}
+
+.game-footer-block-betwwen {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-footer-block_one {
+    display: block;
+}
+
+.game-footer-block_two {
+    display: inline-flex;
+    width: auto;
+    white-space: nowrap;
+}
+
+.header-top_title-text {
+    display: block;
+}
+
+.game-footer-block_three {
+    display: block;
+}
+
+.game-footer-block_fore {
+    display: block;
+}
+
+.game-footer-img_block {
+    display: inline-block;
+
+    justify-content: space-between;
+}
+
+.game-footer-image-block {
+    display: flex;
+}
+
+.game-footer-image_vk {
+    display: block;
+    margin-right: calc($index * 1.5);
+}
+
+.game-footer-image_vk-img {
+    width: calc($index * 1.5);
+}
+
+.game-footer-image_tg {
+    display: block;    
+    margin-right: calc($index * 1.5);
+}
+
+.game-footer-image_tg-img {
+    width: calc($index * 1.5);
+}
+
+.game-footer-image_ds {
+    display: block;
+    margin-right: calc($index * 1.5);
+}
+
+.game-footer-image_ds-img {
+    width: calc($index * 1.65);
+}
+
+.game-card_section {
+    width: 100%;
+    display: block;
+    margin-top: calc($index * 1.5);
+}
+
+.game-card_parametrs {
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.game-card_title {
+    display: block;
+}
+
+.game-card_title-text {
+    display: block;
+    font-size: calc($index * 1);
+}
+
+.game-card_blockImg {
+    display: inline-flex;
+    margin-top: calc($index * 1.2);
+}
+
+.game-card_blockImg-one {
+    display: block;
+    margin-right: calc($index * 2);
+}
+
+.game-card_image-one {
+    margin-top: calc($index * -0.2);
+    width:  calc($index * 2.9);
+}
+
+.game-card_blockImg-two {
+    display: block;
+    margin-right: calc($index * 2);
+}
+
+.game-card_image-two {
+    width:  calc($index * 2.5);
+}
+
+.game-card_blockImg-three {
+    display: block;
+}
+
+.game-card_image-three {
+    width:  calc($index * 2.5);
+}
+

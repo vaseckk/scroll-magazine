@@ -1,0 +1,92 @@
+.game-center_section {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    //height: calc($index * 36);
+}
+
+.game-center_parametrs {
+    display: flex;
+    width: calc($index * 60);
+    height: calc($index * 20);
+    background-color: #762f2f;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.game-block{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-right:  calc($index * 1);
+    padding-left:  calc($index * 1);
+}
+
+.game-block_parametrs {
+    display: block;
+    width: calc($index * 10);
+    height: calc($index * 16);
+    border-radius: 15px;
+    border: #575798 2px solid;
+    background-color: rgba(57, 40, 40, 0); 
+}
+
+.game-block_image {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-block_img {
+    filter: blur(10px 10px 10px 10px);
+    margin-top: calc($index * 0.2);
+    width: 95%;
+    height: calc($index * 11);
+    border-radius: 15px;
+}
+
+.game-block_title {
+    margin-left: calc($index * 0.2);
+}
+
+.game-block_title-h1 {
+    text-align: left;
+    width: 95%;
+    font-size: calc($index * 0.8);
+    color: #fffff0;
+}
+
+.game-block_price {
+    margin-left: calc($index * 0.2);
+    padding-top: calc($index * 1.5);
+    display: block;
+    justify-content: left;
+    text-align: left;
+}
+
+.game-block_price-parametrs {
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+}
+
+.game-block_title-p {
+    color: #fffff0;
+    font-weight: 600;
+    display: block;
+    font-size: calc($index * 1);
+}
+
+.game-block_title-img {
+    display: flex;
+    width: calc($index * 0.9);
+    margin-left:  calc($index * 0.1);
+}

@@ -1,0 +1,108 @@
+$accent: rgba(#fff, .9); // Accent Color
+$fontsize: 20px; // Body Font Size
+$headercolor: #f4efec; // Text Color
+$textcolor: #cdc6c3; // Text Color
+$lineheight: 1.65; // Document Line Height
+$userfont: 'CustomFont', sans-serif; // User Font Family
+$userfont-two: 'CustomFont-two', sans-serif; // User Font Family
+$index: calc(1vw + 1vh);
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; 
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../font/Outfit-VariableFont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CustomFont-two';
+    src: url('../font/Raleway-VariableFont.ttf') format('truetype');
+}
+
+
+@mixin ph {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+
+@mixin scrollbar-styles {
+    .include-new__menu-wrapper::-webkit-scrollbar {
+        width: 12px; // Ширина скроллбара
+    }
+
+    .include-new__menu-wrapper::-webkit-scrollbar-thumb {
+        background-color: #888; // Цвет ползунка
+        border-radius: 10px; // Закругление углов
+    }
+}
+
+@mixin scrollbar-styl {
+  .messenger-sender__sms-write::-webkit-scrollbar {
+      width: 12px; // Ширина скроллбара
+  }
+
+  .messenger-sender__sms-write::-webkit-scrollbar-thumb {
+      background-color: #2d1919; // Цвет ползунка
+      border-radius: 25px; // Закругление углов
+  }
+}
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1800px,
+  xxxxl: 2000px,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1800px
+);
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+	color: rgb(80, 50, 126);
+	background-color: #fff;
+  }
+
+.input, .textarea {
+	outline: none;
+
+	&:focus:required:invalid {
+		border-color: red};
+	&:required:valid{
+		border-color: green};
+}
+
+.body{
+	font-family: $userfont;
+	font-size: $fontsize;
+	line-height: $lineheight;
+	min-width: 320px;
+	overflow-x: hidden;
+}
+
+a {
+  display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+@import 'block/*.scss';

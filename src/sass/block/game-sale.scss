@@ -1,0 +1,431 @@
+.game-sale_section {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-top:  calc($index * 6);
+}
+
+.game-sale_parametrs {
+    display: block;
+    width: calc($index * 60);
+    height: auto;
+    justify-content: space-between;
+    text-align: center;
+    overflow: none;
+    font-family: $userfont-two;
+}
+
+//TOP-SALE
+
+.game-sale_sale {
+    display: block;
+    font-family: $userfont-two;
+    font-weight: 800;
+    width: 100%;
+    margin-bottom: calc($index * 3);
+}
+
+.game-sale_sale-text {
+    font-size: calc($index * 3);
+    letter-spacing: calc($index * 1);
+}
+
+//TOP-LEFT
+
+.game-sale-top_inline {
+    display: inline-block;
+}
+
+.game-sale-block {
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    padding-right:  calc($index * 1);
+    padding-left:  calc($index * 1);
+}
+
+.game-sale-block_parametr {
+    display: block;
+}
+
+.game-sale-product {
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+.game-sale-product_parametr {
+    display: block;
+    width: calc($index * 30);
+    height: calc($index * 16);
+    border-radius: 15px;
+    border: #575798 2px solid;
+    background-color: rgba(57, 40, 40, 0); 
+}
+
+.game-sale-product_img {
+    display: block;
+    border-radius: 15px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+    opacity: 1;
+    &:hover .game-sale-inBasket {
+        display: flex;
+        //z-index: 10;
+    }
+}
+
+.game-sale-product_image {
+    filter: blur(10px 10px 10px 10px);
+    margin-top: calc($index * 0.45);
+    width: 95%;
+    height: calc($index * 15);
+    border-radius: 15px;
+    position: relative;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+    &:hover {
+        opacity: .5;
+    }
+}
+
+.game-sale-productionName {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+}
+
+.game-sale-prodactionName-text {
+    margin-top: calc($index * 1);
+    margin-left: calc($index * 1.2);
+}
+
+.game-sale-productionPrice {
+    font-family: $userfont;
+    font-weight: 400;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-flex;
+}
+
+.game-sale-productionPrice_text {
+    display: inline-flex;
+}
+
+.game-sale-productionPrice_image {
+    display: block;
+    width: calc($index * 0.8);
+}
+
+//INBASKET
+
+.game-sale-inBasket_a {
+    display: block;
+    cursor: auto;
+}
+
+.game-sale-inBasket {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border: none;
+    outline: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+    &:hover {
+        display: flex;
+        opacity: 1;
+        z-index: 10;
+        background-color: #00000063;
+    }
+}
+
+.game-sale-inBasket_parametr {
+  //  display: block;
+    //margin-top: 25%;
+    background-color: #575798;
+    cursor: pointer;
+    border-radius: 15px;
+    width: calc($index * 6);
+    height: calc($index * 1.2);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-sale-inBasket_text {
+    font-family: $userfont-two;
+    font-weight: 600;
+    font-size: calc($index * 0.9);
+}
+
+//TOP-RIGHT
+
+.game-sale-block-right {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding-right:  calc($index * 1);
+    padding-left:  calc($index * 1);
+}
+
+.game-sale-block_parametr-right {
+    display: block;
+}
+
+.game-sale-product-right {
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+.game-sale-product_parametr-right {
+    width: calc($index * 20);
+    height: calc($index * 16);
+    border-radius: 15px;
+    border: #575798 2px solid;
+    background-color: rgba(57, 40, 40, 0); 
+}
+
+.game-sale-product_img-right {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &:hover .game-sale-inBasket {
+        display: flex;
+        //z-index: 10;
+    }
+}
+
+.game-sale-product_image-right {
+    filter: blur(10px 10px 10px 10px);
+    margin-top: calc($index * 0.45);
+    width: 95%;
+    height: calc($index * 15);
+    border-radius: 15px;
+    position: relative;
+}
+
+.game-sale-productionName-right {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+}
+
+.game-sale-prodactionName-text-right {
+    margin-top: calc($index * 1);
+    margin-left: calc($index * 1.2);
+}
+
+.game-sale-productionPrice-right {
+    font-family: $userfont;
+    font-weight: 400;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-flex;
+}
+
+.game-sale-productionPrice_text-right {
+    display: inline-flex;
+}
+
+.game-sale-productionPrice_image-right {
+    display: block;
+    width: calc($index * 0.8);
+}
+
+//BOTTOM-LEFT
+
+.game-sale-bottom_inline {
+    display: inline-block;
+    margin-top: calc($index * 1.5);
+}
+
+.game-sale-block-bleft {
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    padding-right:  calc($index * 1);
+    padding-left:  calc($index * 1);
+}
+
+.game-sale-block_parametr-bleft {
+    display: block;
+}
+
+.game-sale-product-bleft {
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+.game-sale-product_parametr-bleft {
+    width: calc($index * 20);
+    height: calc($index * 16);
+    border-radius: 15px;
+    border: #575798 2px solid;
+    background-color: rgba(57, 40, 40, 0); 
+}
+
+.game-sale-product_img-bleft {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &:hover .game-sale-inBasket {
+        display: flex;
+        //z-index: 10;
+    }
+}
+
+.game-sale-product_image-bleft {
+    filter: blur(10px 10px 10px 10px);
+    margin-top: calc($index * 0.45);
+    width: 95%;
+    height: calc($index * 15);
+    border-radius: 15px;
+    position: relative;
+}
+
+.game-sale-productionName-bleft {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+}
+
+.game-sale-prodactionName-text-bleft {
+    margin-top: calc($index * 1);
+    margin-left: calc($index * 1.2);
+}
+
+.game-sale-productionPrice-bleft {
+    font-family: $userfont;
+    font-weight: 400;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-flex;
+}
+
+.game-sale-productionPrice_text-bleft {
+    display: inline-flex;
+}
+
+.game-sale-productionPrice_image-bleft {
+    display: block;
+    width: calc($index * 0.8);
+}
+
+//BOTTOM-RIHGT
+
+.game-sale-block-bright {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding-right:  calc($index * 1);
+    padding-left:  calc($index * 1);
+}
+
+.game-sale-block_parametr-bright {
+    display: block;
+}
+
+.game-sale-product-bright {
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+.game-sale-product_parametr-bright {
+    width: calc($index * 30);
+    height: calc($index * 16);
+    border-radius: 15px;
+    border: #575798 2px solid;
+    background-color: rgba(57, 40, 40, 0); 
+}
+
+.game-sale-product_img-bright {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &:hover .game-sale-inBasket {
+        display: flex;
+        //z-index: 10;
+    }
+}
+
+.game-sale-product_image-bright {
+    filter: blur(10px 10px 10px 10px);
+    margin-top: calc($index * 0.45);
+    width: 95%;
+    height: calc($index * 15);
+    border-radius: 15px;
+    position: relative;
+}
+
+.game-sale-productionName-bright {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+}
+
+.game-sale-prodactionName-text-bright {
+    margin-top: calc($index * 1);
+    margin-left: calc($index * 1.2);
+}
+
+.game-sale-productionPrice-bright {
+    font-family: $userfont;
+    font-weight: 400;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-flex;
+}
+
+.game-sale-productionPrice_text-bright {
+    display: inline-flex;
+}
+
+.game-sale-productionPrice_image-bright {
+    display: block;
+    width: calc($index * 0.8);
+}
